@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #181818;
+    color: white;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+h1 {
+    font-weight: 200;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    width: 100%;
+    z-index: -1;
+    border-bottom: #181818 5px solid;
+}
+
+#content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #181818;
+    min-height: 60%;
+    width: 920px;
+    border-radius: 20px;
+    padding: 30px;
+    margin: auto;
+}
+
+.horizontal-card-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.social-media-card {
+    border: 1px #353535 solid;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    height: 40px;
+    width: 200px;
+    transition: 400ms;
+}
+
+.social-media-card:hover, .project-media-card:hover, .server-media-card:hover {
+    background-color: #202020;
+}
+
+.social-media-card h3, .project-media-card h3, .server-media-card h3 {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.social-media-card p, .project-media-card p, .server-media-card p {
+    font-size: 12px;
+    margin: 0px;
+    margin-top: 0;
+    color: #dfdfdf;
+}
+
+.project-media-card {
+    border: 1px #353535 solid;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    transition: 400ms;
+    object-fit: cover;
+    height: calc(100% - 22px);
+}
+
+.project-media-card .link {
+    margin-top: 5px;
+}
+
+.server-media-card {
+    border: 1px #353535 solid;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    transition: 400ms;
+    object-fit: cover;
+    height: calc(100% - 22px);
+}
+
+.server-media-card img {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 920px), (pointer:coarse) {
+    #content {
+        width: 80%;
+    }
+
+    .social-media-card, .project-media-card, .server-media-card {
+        width: 16vh;
+    }
+
+    .link {
+        display: none;
+    }
+}
