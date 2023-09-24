@@ -113,6 +113,10 @@ a {
     margin-bottom: 5px;
 }
 
+.annoying-link {
+    word-wrap: break-word;
+}
+
 @media (max-width: 920px), (pointer:coarse) {
     #content {
         width: 80%;
