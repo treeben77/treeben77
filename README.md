@@ -10,7 +10,7 @@ Hi, I’m TreeBen77, I know how to code things in Python and Roblox Lua pretty w
 ![Static Badge](https://img.shields.io/badge/VS%20Code-0075b6?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/Roblox%20Studio-009ffe?style=for-the-badge&logo=robloxstudio&logoColor=white)
 
-You can contact me in my Discord server: https://discord.gg/4CSc9E5uQy, or on Roblox [@TreBen77](https://www.roblox.com/users/287113233)
+You can contact me in my Discord server: https://discord.gg/4CSc9E5uQy, or on Roblox [@TreeBen77](https://www.roblox.com/users/287113233)
 
 <!---
 TreeBen77/TreeBen77 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
