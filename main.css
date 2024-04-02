@@ -117,6 +117,10 @@ a {
     word-wrap: break-word;
 }
 
+.e404-div a {
+    color: #2a92f5;
+}
+
 @media (max-width: 920px), (pointer:coarse) {
     #content {
         width: 80%;

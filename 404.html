@@ -1,0 +1,47 @@
+<head>
+    <link rel="stylesheet" href="/main.css">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
+</head>
+<body>
+    <img class="background-img" src="/background.png">
+    
+    <div id="content">
+        <h1>hey, i'm treeben77!</h1>
+
+        <div id="not-found" class="e404-div">
+            <p>The page you requested couldn't be found.</p>
+
+            <p><a href="/">Go home</a></p>
+
+            <noscript>
+                <p><b>Expected a redirect here?</b> You need to enabled JavaScript for redirects to work.</p>
+            </noscript>
+        </div>
+    
+        <div id="redirecting" class="e404-div" hidden>
+            <p>You should be redirected shortly. If not, please click this button:</p>
+
+            <p><a href="/" target="_blank" rel="noopener noreferrer" id="redirect-link">Follow redirect</a></p>
+        </div>
+
+        <p>Thanks for visiting my website!</p>
+    </div>
+
+    <script>
+        const not_found_div = document.getElementById("not-found");
+        const redirect_div = document.getElementById("redirecting");
+        const redirect_lnk = document.getElementById("redirect-link");
+
+        const REDIRECTS = {
+            "/automod": "https://treeben77.github.io/automod-regex-generator/",
+        };
+
+        if (REDIRECTS[window.location.pathname]) {
+            not_found_div.hidden = true;
+            redirect_div.hidden = false;
+            redirect_lnk.href = REDIRECTS[window.location.pathname];
+
+            window.location = REDIRECTS[window.location.pathname];
+        }
+    </script>
+</body>
