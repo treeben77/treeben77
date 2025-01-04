@@ -40,9 +40,9 @@
         if (REDIRECTS[window.location.pathname]) {
             not_found_div.hidden = true;
             redirect_div.hidden = false;
-            redirect_lnk.href = REDIRECTS[window.location.pathname];
+            redirect_lnk.href = REDIRECTS[window.location.pathname.toLowerCase()];
 
-            window.location = REDIRECTS[window.location.pathname];
+            window.location = REDIRECTS[window.location.pathname.toLowerCase()];
         }
     </script>
 </body>
