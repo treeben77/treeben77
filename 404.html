@@ -34,10 +34,11 @@
 
         const REDIRECTS = {
             "/automod": "https://treeben77.github.io/automod-regex-generator/",
-            "/pay": "/stripe-info.html"
+            "/donate": "https://donate.stripe.com/aEU9BacIh5TO9k47st",
+            "/pay": "/stripe-info.html",
         };
 
-        if (REDIRECTS[window.location.pathname]) {
+        if (REDIRECTS[window.location.pathname.toLowerCase()]) {
             not_found_div.hidden = true;
             redirect_div.hidden = false;
             redirect_lnk.href = REDIRECTS[window.location.pathname.toLowerCase()];
